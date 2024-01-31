@@ -3228,6 +3228,7 @@ body.menu-is-open {
     display: block;
     padding: var(--vspace-0_5) 0;
     color  : white;
+    list-style-type: none;
 }
 
 .s-header__nav-links li a:focus::before,
@@ -3237,7 +3238,7 @@ body.menu-is-open {
 
 .s-header__nav-links a::before {
     display          : block;
-    content          : counter(ctr, decimal-leading-zero) ".";
+    /* content          : counter(ctr, decimal-leading-zero) "."; */
     counter-increment: ctr;
     font-family      : var(--font-3);
     font-weight      : 500;
